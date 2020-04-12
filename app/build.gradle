@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.androiduistudyprojects"
-        minSdkVersion 22
+        minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -46,6 +46,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 
     implementation "androidx.room:room-runtime:2.2.5"
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
     kapt "androidx.room:room-compiler:2.2.5"
     implementation "androidx.room:room-ktx:2.2.5"
 
