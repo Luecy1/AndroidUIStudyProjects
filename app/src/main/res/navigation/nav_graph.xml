@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/blankFragment"
-        android:name="com.example.androiduistudyprojects.blank.BlankFragment"
+        android:name="com.example.androiduistudyprojects.input.InputFragment"
         android:label="blank_fragment"
         tools:layout="@layout/blank_fragment" />
 

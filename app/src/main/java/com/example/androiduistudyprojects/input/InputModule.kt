@@ -1,4 +1,4 @@
-package com.example.androiduistudyprojects.blank
+package com.example.androiduistudyprojects.input
 
 import androidx.lifecycle.ViewModel
 import com.example.androiduistudyprojects.di.ViewModelBuilder
@@ -9,17 +9,17 @@ import dagger.android.ContributesAndroidInjector
 import dagger.multibindings.IntoMap
 
 @Module
-abstract class BlankModule {
+abstract class InputModule {
 
     @ContributesAndroidInjector(
         modules = [
             ViewModelBuilder::class
         ]
     )
-    internal abstract fun blankFragment(): BlankFragment
+    internal abstract fun blankFragment(): InputFragment
 
     @Binds
     @IntoMap
-    @ViewModelKey(BlankViewModel::class)
-    abstract fun bindViewModel(viewmodel: BlankViewModel): ViewModel
+    @ViewModelKey(InputViewModel::class)
+    abstract fun bindViewModel(viewmodel: InputViewModel): ViewModel
 }

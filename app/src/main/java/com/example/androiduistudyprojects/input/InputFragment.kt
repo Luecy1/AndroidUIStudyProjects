@@ -1,4 +1,4 @@
-package com.example.androiduistudyprojects.blank
+package com.example.androiduistudyprojects.input
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,12 +14,12 @@ import kotlinx.android.synthetic.main.blank_fragment.*
 import timber.log.Timber
 import javax.inject.Inject
 
-class BlankFragment : DaggerFragment() {
+class InputFragment : DaggerFragment() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private val viewModel by viewModels<BlankViewModel> { viewModelFactory }
+    private val viewModel by viewModels<InputViewModel> { viewModelFactory }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

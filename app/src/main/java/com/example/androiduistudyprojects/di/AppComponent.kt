@@ -1,7 +1,7 @@
 package com.example.androiduistudyprojects.di
 
 import com.example.androiduistudyprojects.App
-import com.example.androiduistudyprojects.blank.BlankModule
+import com.example.androiduistudyprojects.input.InputModule
 import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
@@ -13,7 +13,7 @@ import javax.inject.Singleton
         AndroidSupportInjectionModule::class,
         ViewModelBuilder::class,
         AppModule::class,
-        BlankModule::class]
+        InputModule::class]
 )
 interface AppComponent : AndroidInjector<App> {
 
