@@ -8,32 +8,13 @@ object DummyContent {
 
     private val ITEM_MAP: MutableMap<String, FragmentItem> = HashMap()
 
-    private const val COUNT = 25
-
     init {
-        for (i in 1..COUNT) {
-            addItem(createDummyItem(i))
-        }
-
-        addItem(FragmentItem("1", "Input", "input"))
+        addItem(FragmentItem("1", "入力項目", "input"))
     }
 
     private fun addItem(item: FragmentItem) {
         ITEMS.add(item)
         ITEM_MAP[item.id] = item
-    }
-
-    private fun createDummyItem(position: Int): FragmentItem {
-        return FragmentItem(position.toString(), "Item $position", makeDetails(position))
-    }
-
-    private fun makeDetails(position: Int): String {
-        val builder = StringBuilder()
-        builder.append("Details about Item: ").append(position)
-        for (i in 0 until position) {
-            builder.append("\nMore details information here.")
-        }
-        return builder.toString()
     }
 }
 

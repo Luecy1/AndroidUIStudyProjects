@@ -54,5 +54,5 @@ class ComponentRecyclerViewAdapter(
 
 
 interface OnListFragmentInteractionListener {
-    fun onListFragmentInteraction(item: FragmentItem?)
+    fun onListFragmentInteraction(item: FragmentItem)
 }

@@ -48,8 +48,11 @@ class ComponentFragment : Fragment(), OnListFragmentInteractionListener {
         listener = null
     }
 
-    override fun onListFragmentInteraction(item: FragmentItem?) {
+    override fun onListFragmentInteraction(item: FragmentItem) {
         Timber.d(item.toString())
-        findNavController().navigate(R.id.action_componentFragment_to_blankFragment)
+
+        when (item.id) {
+            "1" -> findNavController().navigate(R.id.action_componentFragment_to_blankFragment)
+        }
     }
 }
