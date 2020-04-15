@@ -50,9 +50,6 @@ class ComponentFragment : Fragment(), OnListFragmentInteractionListener {
 
     override fun onListFragmentInteraction(item: FragmentItem) {
         Timber.d(item.toString())
-
-        when (item.id) {
-            "1" -> findNavController().navigate(R.id.action_componentFragment_to_blankFragment)
-        }
+        findNavController().navigate(item.actionId)
     }
 }

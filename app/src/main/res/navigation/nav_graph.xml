@@ -19,5 +19,13 @@
         <action
             android:id="@+id/action_componentFragment_to_blankFragment"
             app:destination="@id/blankFragment" />
+        <action
+            android:id="@+id/action_componentFragment_to_chipsFragment"
+            app:destination="@id/chipsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/chipsFragment"
+        android:name="com.example.androiduistudyprojects.chips.ChipsFragment"
+        android:label="fragment_chips"
+        tools:layout="@layout/fragment_chips" />
 </navigation>
