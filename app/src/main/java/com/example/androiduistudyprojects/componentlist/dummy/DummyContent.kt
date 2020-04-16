@@ -12,6 +12,8 @@ object DummyContent {
     init {
         addItem(FragmentItem("1", "入力項目", "input", R.id.action_componentFragment_to_blankFragment))
         addItem(FragmentItem("2", "Chips", "input", R.id.action_componentFragment_to_chipsFragment))
+        addItem(FragmentItem("3", "BottomAppBar", "", null))
+
     }
 
     private fun addItem(item: FragmentItem) {
@@ -24,7 +26,7 @@ data class FragmentItem(
     val id: String,
     val content: String,
     val details: String,
-    val actionId: Int
+    val actionId: Int?
 ) {
     override fun toString(): String = content
 }

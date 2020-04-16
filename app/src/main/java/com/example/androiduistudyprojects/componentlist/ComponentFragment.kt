@@ -1,5 +1,6 @@
 package com.example.androiduistudyprojects.componentlist
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androiduistudyprojects.R
+import com.example.androiduistudyprojects.bottomappbar.BottomAppBarActivity
 import com.example.androiduistudyprojects.componentlist.dummy.DummyContent
 import com.example.androiduistudyprojects.componentlist.dummy.FragmentItem
 import timber.log.Timber
@@ -50,6 +52,19 @@ class ComponentFragment : Fragment(), OnListFragmentInteractionListener {
 
     override fun onListFragmentInteraction(item: FragmentItem) {
         Timber.d(item.toString())
-        findNavController().navigate(item.actionId)
+
+        if (item.actionId != null) {
+            findNavController().navigate(item.actionId)
+        } else {
+
+            when (item.id) {
+                "3" -> {
+                    val intent = Intent(requireContext(), BottomAppBarActivity::class.java)
+                    startActivity(intent)
+                }
+            }
+
+        }
+
     }
 }
