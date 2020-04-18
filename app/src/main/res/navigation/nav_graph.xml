@@ -22,10 +22,18 @@
         <action
             android:id="@+id/action_componentFragment_to_chipsFragment"
             app:destination="@id/chipsFragment" />
+        <action
+            android:id="@+id/action_componentFragment_to_dialogsFragment"
+            app:destination="@id/dialogsFragment" />
     </fragment>
     <fragment
         android:id="@+id/chipsFragment"
         android:name="com.example.androiduistudyprojects.chips.ChipsFragment"
         android:label="fragment_chips"
         tools:layout="@layout/fragment_chips" />
+    <fragment
+        android:id="@+id/dialogsFragment"
+        android:name="com.example.androiduistudyprojects.dialogs.DialogsFragment"
+        android:label="fragment_dialogs"
+        tools:layout="@layout/fragment_dialogs" />
 </navigation>

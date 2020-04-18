@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androiduistudyprojects.R
-import com.example.androiduistudyprojects.componentlist.dummy.FragmentItem
 import kotlinx.android.synthetic.main.fragment_component.view.*
 
 class ComponentRecyclerViewAdapter(

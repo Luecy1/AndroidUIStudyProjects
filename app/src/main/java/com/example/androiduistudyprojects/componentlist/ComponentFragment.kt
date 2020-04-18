@@ -12,8 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androiduistudyprojects.R
 import com.example.androiduistudyprojects.bottomappbar.BottomAppBarActivity
-import com.example.androiduistudyprojects.componentlist.dummy.DummyContent
-import com.example.androiduistudyprojects.componentlist.dummy.FragmentItem
 import timber.log.Timber
 
 class ComponentFragment : Fragment(), OnListFragmentInteractionListener {
