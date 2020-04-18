@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".dialogs.DialogsFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <Button
-        android:id="@+id/button_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button1" />
+    <data>
 
-    <Button
-        android:id="@+id/simple_dialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SimpleDialog" />
+        <variable
+            name="viewmodel"
+            type="com.example.androiduistudyprojects.dialogs.DialogsViewModel" />
+    </data>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".dialogs.DialogsFragment">
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> viewmodel.onClickButton1()}"
+            android:text="Button1" />
+
+        <Button
+            android:id="@+id/simple_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SimpleDialog" />
+
+        <Button
+            android:id="@+id/single_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="single_click" />
+
+        <Button
+            android:id="@+id/multi_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="multi_dialog" />
+
+    </LinearLayout>
+</layout>
