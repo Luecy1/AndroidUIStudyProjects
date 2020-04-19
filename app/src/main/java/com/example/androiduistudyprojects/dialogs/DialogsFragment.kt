@@ -56,6 +56,10 @@ class DialogsFragment : DaggerFragment() {
                     Snackbar.make(view, "click! -> $witch", Snackbar.LENGTH_SHORT).show()
                     viewModel.onCloseDialog1()
                 }
+                .setOnCancelListener {
+                    Snackbar.make(view, "Cancel", Snackbar.LENGTH_SHORT).show()
+                    viewModel.onCloseDialog1()
+                }
                 .show()
         })
 
