@@ -42,6 +42,14 @@ object DummyContent {
                 R.id.action_componentFragment_to_dialogsFragment
             )
         )
+        addItem(
+            FragmentItem(
+                "5",
+                "Button",
+                "Button",
+                R.id.action_componentFragment_to_buttonFragment
+            )
+        )
     }
 
     private fun addItem(item: FragmentItem) {

@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_componentFragment_to_dialogsFragment"
             app:destination="@id/dialogsFragment" />
+        <action
+            android:id="@+id/action_componentFragment_to_buttonFragment"
+            app:destination="@id/buttonFragment" />
     </fragment>
     <fragment
         android:id="@+id/chipsFragment"
@@ -36,4 +39,9 @@
         android:name="com.example.androiduistudyprojects.dialogs.DialogsFragment"
         android:label="fragment_dialogs"
         tools:layout="@layout/fragment_dialogs" />
+    <fragment
+        android:id="@+id/buttonFragment"
+        android:name="com.example.androiduistudyprojects.button.ButtonFragment"
+        android:label="fragment_button"
+        tools:layout="@layout/fragment_button" />
 </navigation>
