@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androiduistudyprojects.DrawerActivity
 import com.example.androiduistudyprojects.R
 import com.example.androiduistudyprojects.bottomappbar.BottomAppBarActivity
 import timber.log.Timber
@@ -58,6 +59,10 @@ class ComponentFragment : Fragment(), OnListFragmentInteractionListener {
             when (item.id) {
                 "3" -> {
                     val intent = Intent(requireContext(), BottomAppBarActivity::class.java)
+                    startActivity(intent)
+                }
+                "7" -> {
+                    val intent = Intent(requireContext(), DrawerActivity::class.java)
                     startActivity(intent)
                 }
             }

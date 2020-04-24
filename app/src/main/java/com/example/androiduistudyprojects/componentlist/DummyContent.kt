@@ -58,6 +58,14 @@ object DummyContent {
                 R.id.action_componentFragment_to_menusActivity
             )
         )
+        addItem(
+            FragmentItem(
+                "7",
+                "Drawer",
+                "Drawer",
+                null
+            )
+        )
     }
 
     private fun addItem(item: FragmentItem) {
