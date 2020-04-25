@@ -66,6 +66,14 @@ object DummyContent {
                 null
             )
         )
+        addItem(
+            FragmentItem(
+                "8",
+                "Scrolling",
+                "Scrolling",
+                null
+            )
+        )
     }
 
     private fun addItem(item: FragmentItem) {

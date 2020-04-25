@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androiduistudyprojects.DrawerActivity
 import com.example.androiduistudyprojects.R
+import com.example.androiduistudyprojects.ScrollingActivity
 import com.example.androiduistudyprojects.bottomappbar.BottomAppBarActivity
 import timber.log.Timber
 
@@ -63,6 +64,10 @@ class ComponentFragment : Fragment(), OnListFragmentInteractionListener {
                 }
                 "7" -> {
                     val intent = Intent(requireContext(), DrawerActivity::class.java)
+                    startActivity(intent)
+                }
+                "8" -> {
+                    val intent = Intent(requireContext(), ScrollingActivity::class.java)
                     startActivity(intent)
                 }
             }
