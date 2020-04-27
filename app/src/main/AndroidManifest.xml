@@ -11,9 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".book.BookListActivity"
+            android:label="@string/title_book_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".book.BookDetailActivity"
+            android:label="@string/title_book_detail"
+            android:parentActivityName=".book.BookListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androiduistudyprojects.book.BookListActivity" />
+        </activity>
+        <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DrawerActivity"
             android:label="@string/title_activity_drawer"

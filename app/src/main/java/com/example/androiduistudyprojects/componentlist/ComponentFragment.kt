@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.androiduistudyprojects.DrawerActivity
 import com.example.androiduistudyprojects.R
 import com.example.androiduistudyprojects.ScrollingActivity
+import com.example.androiduistudyprojects.book.BookListActivity
 import com.example.androiduistudyprojects.bottomappbar.BottomAppBarActivity
 import timber.log.Timber
 
@@ -68,6 +69,10 @@ class ComponentFragment : Fragment(), OnListFragmentInteractionListener {
                 }
                 "8" -> {
                     val intent = Intent(requireContext(), ScrollingActivity::class.java)
+                    startActivity(intent)
+                }
+                "9" -> {
+                    val intent = Intent(requireContext(), BookListActivity::class.java)
                     startActivity(intent)
                 }
             }

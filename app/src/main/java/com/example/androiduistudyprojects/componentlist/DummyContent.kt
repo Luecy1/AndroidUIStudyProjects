@@ -74,6 +74,14 @@ object DummyContent {
                 null
             )
         )
+        addItem(
+            FragmentItem(
+                "9",
+                "Book",
+                "Book",
+                null
+            )
+        )
     }
 
     private fun addItem(item: FragmentItem) {
