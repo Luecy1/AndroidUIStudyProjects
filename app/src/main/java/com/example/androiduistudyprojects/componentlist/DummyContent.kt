@@ -82,6 +82,14 @@ object DummyContent {
                 null
             )
         )
+        addItem(
+            FragmentItem(
+                "10",
+                "Card",
+                "Card",
+                R.id.action_componentFragment_to_cardFragment
+            )
+        )
     }
 
     private fun addItem(item: FragmentItem) {

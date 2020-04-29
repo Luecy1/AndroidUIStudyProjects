@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_componentFragment_to_mobile_navigation"
             app:destination="@id/mobile_navigation" />
+        <action
+            android:id="@+id/action_componentFragment_to_cardFragment"
+            app:destination="@id/cardFragment" />
     </fragment>
     <fragment
         android:id="@+id/chipsFragment"
@@ -56,4 +59,9 @@
         android:label="activity_menus"
         tools:layout="@layout/activity_menus" />
     <include app:graph="@navigation/mobile_navigation" />
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.example.androiduistudyprojects.card.CardFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card" />
 </navigation>
