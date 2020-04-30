@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <corners android:radius="200dp" />
+            <gradient
+                android:angle="90"
+                android:endColor="#66B0D6"
+                android:startColor="#323232" />
+        </shape>
+    </item>
+
+    <!-- irasutoya -->
+    <item
+        android:drawable="@drawable/hana_kamu_man"
+        android:top="10dp"
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp" />
+
+</layer-list>

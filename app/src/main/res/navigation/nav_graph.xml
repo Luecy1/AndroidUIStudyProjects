@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_componentFragment_to_cardFragment"
             app:destination="@id/cardFragment" />
+        <action
+            android:id="@+id/action_componentFragment_to_drawableFragment"
+            app:destination="@id/drawableFragment" />
     </fragment>
     <fragment
         android:id="@+id/chipsFragment"
@@ -64,4 +67,9 @@
         android:name="com.example.androiduistudyprojects.card.CardFragment"
         android:label="fragment_card"
         tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/drawableFragment"
+        android:name="com.example.androiduistudyprojects.DrawableFragment"
+        android:label="fragment_drawable"
+        tools:layout="@layout/fragment_drawable" />
 </navigation>
