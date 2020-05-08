@@ -47,6 +47,13 @@ class GestureFragment : Fragment() {
                     } else {
                         text_view.y = text_view.y - distanceY
                     }
+
+                    Timber.d("y:${text_view.y}")
+                    // min 1f
+                    // max 100f
+                    val textSize = text_view.y / 1600f * 100f
+                    text_view.textSize = textSize
+
                     return true
                 }
             })
