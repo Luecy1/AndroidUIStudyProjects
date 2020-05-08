@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_componentFragment_to_drawableFragment"
             app:destination="@id/drawableFragment" />
+        <action
+            android:id="@+id/action_componentFragment_to_gestureFragment"
+            app:destination="@id/gestureFragment" />
     </fragment>
     <fragment
         android:id="@+id/chipsFragment"
@@ -72,4 +75,9 @@
         android:name="com.example.androiduistudyprojects.DrawableFragment"
         android:label="fragment_drawable"
         tools:layout="@layout/fragment_drawable" />
+    <fragment
+        android:id="@+id/gestureFragment"
+        android:name="com.example.androiduistudyprojects.gesture.GestureFragment"
+        android:label="fragment_gesture"
+        tools:layout="@layout/fragment_gesture" />
 </navigation>

@@ -98,6 +98,14 @@ object DummyContent {
                 R.id.action_componentFragment_to_drawableFragment
             )
         )
+        addItem(
+            FragmentItem(
+                "12",
+                "Gesture",
+                "Gesture",
+                R.id.action_componentFragment_to_gestureFragment
+            )
+        )
     }
 
     private fun addItem(item: FragmentItem) {
