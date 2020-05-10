@@ -49,10 +49,23 @@ class GestureFragment : Fragment() {
                     }
 
                     Timber.d("y:${text_view.y}")
-                    // min 1f
-                    // max 100f
                     val textSize = text_view.y / 1600f * 100f
                     text_view.textSize = textSize
+
+                    return true
+                }
+
+                override fun onFling(
+                    e1: MotionEvent?,
+                    e2: MotionEvent?,
+                    velocityX: Float,
+                    velocityY: Float
+                ): Boolean {
+                    Timber.d("method call onFling")
+                    Timber.d("onFling:%s", e1.toString())
+                    Timber.d("onFling:%s", e2.toString())
+                    Timber.d("onFling:velocityX $velocityX")
+                    Timber.d("onFling:velocityY $velocityY")
 
                     return true
                 }
